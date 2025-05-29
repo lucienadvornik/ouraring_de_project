@@ -1,6 +1,6 @@
 # Oura Ring – Personal Analytics Platform on AWS
 
-This project builds a personal data pipeline that collects, stores, transforms, analyzes, and visualizes daily health data from the [Oura Ring](https://ouraring.com) using the AWS cloud.
+This project builds a personal data pipeline that collects, stores, transforms, analyzes, and visualizes daily sleep data from the [Oura Ring](https://ouraring.com) using the AWS cloud.
 
 ## What it does
 
