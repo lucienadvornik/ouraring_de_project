@@ -1,0 +1,25 @@
+Description: Simple Cloud Formation for S3 bucket
+
+# Parameters:
+#   RegionalStackName:
+#     Type: String
+#     Description: Project name variable used for naming resources
+#     Default: frankfurt
+
+Resources:
+  ACDataStorage:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: s3-for-oura-data
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+      NotificationConfiguration:
+        EventBridgeConfiguration:
+          EventBridgeEnabled: true
+      Tags:
+        - Key: Project
+          Value: Oura Ring Data Platform
+        - Key: Component
+          Value: S3 For Oura data
