@@ -1,8 +1,12 @@
+# Configuration
+# - Additional layer: requests library
+# - Runtime: Python 3.10, Architecture: x86_64
+
 #Libraries
 import json
 import boto3
 import requests
-from datetime import date
+from datetime import datetime, timedelta
 
 # API configuration
 API_TOKEN = "UEJ5GU7KMOFISZHYQOPVLQOLFQOQ2VDR"  
@@ -13,8 +17,8 @@ HEADERS = {"Authorization": f"Bearer {API_TOKEN}"}
 s3 = boto3.client("s3")
 BUCKET = "s3-for-oura-data"
 
-# Today's date
-TODAY = date.today().isoformat()
+# Today's date in Prague, CZ
+TODAY = (datetime.utcnow() + timedelta(hours=2)).date().isoformat()
 
 # Fetch data from Oura API
 def fetch_oura(endpoint):
