@@ -2,7 +2,7 @@
 
 This project builds a personal data pipeline that collects, stores, transforms, analyzes, and visualizes daily health data from the [Oura Ring](https://ouraring.com) using the AWS cloud.
 
-## 🚀 What it does
+## What it does
 
 - Automatically pulls your daily data (sleep, readiness, activity) from the Oura API
 - Stores raw JSON files in Amazon S3
