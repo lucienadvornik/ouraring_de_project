@@ -4,7 +4,7 @@ Resources:
     Properties:
       Name: ouraring_daily_scheduler
       Description: Daily trigger for Oura Lambda function
-      ScheduleExpression: "cron(58 23 ? * * *)"  # daily at 23:58 to gather the data for current day
+      ScheduleExpression: "cron(00 9 ? * * *)"  # daily at 9:00 to gather the data for current day(night)
       ScheduleExpressionTimezone: Europe/Prague
       FlexibleTimeWindow:
         Mode: OFF
