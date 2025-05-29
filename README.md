@@ -4,7 +4,7 @@ This project builds a personal data pipeline that collects, stores, transforms, 
 
 ## What it does
 
-- Automatically pulls your daily data (sleep, readiness, activity) from the Oura API
+- Automatically pulls your daily data (sleep, readiness) from the Oura API
 - Stores raw JSON files in Amazon S3
 - Transforms data to Parquet using AWS Glue
 - Loads data into Redshift for advanced querying
