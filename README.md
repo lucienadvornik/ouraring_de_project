@@ -14,7 +14,7 @@ This project builds a personal data pipeline that collects, stores, transforms, 
 
 
 ## Architecture Overview
-![Architecture Diagram](assets/architecture.png)
+
 
 
 ## Tech Stack
