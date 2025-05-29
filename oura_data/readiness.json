@@ -1,0 +1,23 @@
+{
+  "data": [
+    {
+      "id": "23265016-9030-4764-9920-169aedcc1742",
+      "contributors": {
+        "activity_balance": 89,
+        "body_temperature": 96,
+        "hrv_balance": 73,
+        "previous_day_activity": 98,
+        "previous_night": 99,
+        "recovery_index": 100,
+        "resting_heart_rate": 92,
+        "sleep_balance": 66
+      },
+      "day": "2025-05-29",
+      "score": 86,
+      "temperature_deviation": -0.27,
+      "temperature_trend_deviation": -0.05,
+      "timestamp": "2025-05-29T00:00:00+00:00"
+    }
+  ],
+  "next_token": null
+}
