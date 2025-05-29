@@ -1,0 +1,14 @@
+Resources:
+  OuraRingDailyScheduler:
+    Type: AWS::Scheduler::Schedule
+    Properties:
+      Name: ouraring_daily_scheduler
+      Description: Daily trigger for Oura Lambda function
+      ScheduleExpression: "cron(20 * ? * * *)"  
+      ScheduleExpressionTimezone: Europe/Prague
+      FlexibleTimeWindow:
+        Mode: OFF
+      Target:
+        Arn: arn:aws:lambda:eu-central-1:123456789012:function:api_ouraring
+        RoleArn: arn:aws:iam::123456789012:role/InvokeLambdaFromSchedulerRole
+      State: DISABLED # must enable manually after deployment
