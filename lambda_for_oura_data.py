@@ -25,7 +25,7 @@ def fetch_oura(endpoint):
 
 # Main script
 def lambda_handler(event, context):
-    for data_type in ["sleep", "readiness", "activity"]:
+    for data_type in ["sleep", "readiness"]:
         data = fetch_oura(f"daily_{data_type}")
         key = f"raw/{TODAY}/{data_type}.json"
         s3.put_object(
