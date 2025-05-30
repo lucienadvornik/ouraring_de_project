@@ -1,0 +1,15 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: Oura Ring Health Alert SNS topic with email subscription
+
+Resources:
+  OuraHealthAlertsTopic:
+    Type: AWS::SNS::Topic
+    Properties:
+      TopicName: oura-health-alerts
+
+  EmailSubscription:
+    Type: AWS::SNS::Subscription
+    Properties:
+      Protocol: email
+      Endpoint: lucie@example.com  # change to your email address
+      TopicArn: !Ref OuraHealthAlertsTopic
