@@ -22,6 +22,5 @@ This project builds a personal data pipeline that collects, stores, transforms, 
 - **AWS Lambda** – data ingestion
 - **Amazon S3** – data lake storage
 - **AWS Glue** – ETL jobs and data cataloging
-- **Amazon Redshift / Athena** – querying and analytics
-- **Amazon QuickSight** – visualization
-- **Amazon SNS** – email/sms alerts
+- **Amazon Redshift** – querying and analytics
+- **Amazon SNS** – email(/sms) alerts
