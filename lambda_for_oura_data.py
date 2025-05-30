@@ -9,7 +9,7 @@ import requests
 from datetime import datetime, timedelta
 
 # API configuration
-API_TOKEN = "UEJ5GU7KMOFISZHYQOPVLQOLFQOQ2VDR"  
+API_TOKEN = "API TOKEN"  
 BASE_URL = "https://api.ouraring.com/v2/usercollection"
 HEADERS = {"Authorization": f"Bearer {API_TOKEN}"}
 
