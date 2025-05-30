@@ -1,6 +1,6 @@
 # Oura Ring – Personal Analytics Platform on AWS
 
-This project builds a personal data pipeline that collects, stores, transforms, analyzes, and visualizes daily sleep data from the [Oura Ring](https://ouraring.com) using the AWS cloud.
+This solution provides daily email/sms personalised notifications based on your own sleep data.
 
 ## What it does
 
