@@ -8,7 +8,6 @@ This project builds a personal data pipeline that collects, stores, transforms, 
 - Stores raw JSON files in Amazon S3
 - Transforms data to Parquet using AWS Glue
 - Loads data into Redshift for advanced querying
-- Displays health trends via Amazon QuickSight dashboards
 - Sends personalized health notifications via Amazon SNS (e.g., low HRV alerts)
 
 
